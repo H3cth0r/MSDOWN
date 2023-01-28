@@ -7,6 +7,14 @@ class Downloader:
     conditions_ydl = {'format': 'bestaudio/best','outtmpl': 'UsbStick/%(title)s.%(ext)s','ignoreerrors': True,'postprocessors'    : [{'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality'  : '192',}],}
 
     def __init__(self, *args):
+        """
+        @brief
+        Class constructor. Recives any kind of args and will adapt the attributes
+        depending on this parameters.
+        @params
+
+        args        List of arguments
+        """
         # Variable for storing the number of process to open while downloading
         # From a list.
         self.number_of_processes    = 1
@@ -34,6 +42,9 @@ class Downloader:
 
         @params
         line_t      the url of the playlist
+
+        @returns
+        String confirmation
         """
         ydl_t = youtube_dl.YoutubeDL(self.conditions_ydl)
         ydl_t.download([line_t])
@@ -73,6 +84,10 @@ class Downloader:
 
 
     def startDownloading(self):
+        """
+        @brief
+        Method for start to download the audio, depending on option/configuration
+        """
         if self.option   == 0:
             self.downloadPlaylistsPlists()
         elif self.option   == 1:
