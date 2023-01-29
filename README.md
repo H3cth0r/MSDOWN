@@ -5,8 +5,8 @@ multiprocessing operations, for faster performance and therefore faster download
 Para Fer
 
 ## Installation
-For the development of the current implementation, it has beem used python 3.9.6, therefore it is recommended this
-or newer versions. Youtube-dl must be install using "pip"(python package installer):
+For the development of the current implementation, it has been used python 3.9.6, therefore it is recommended this
+or newer versions. Youtube-dl must be installed using "pip"(python package installer):
 ```
 pip install youtube_dl
 OR
@@ -24,11 +24,11 @@ sudo apt update && sudo apt upgrade
 sudo apt install ffmpeg
 ```
 
-Download the current repo in derised directory. It's recommended to work on the "main.py" file for your own
+Clone the current repo in derised directory. It's recommended to work on the "main.py" file for your own
 implementations.
 
 ## Recommendations
-For this personal implementation, it was used as raspberry pi device to run a local ubuntu server, because of the
+For this personal implementation, it was used a raspberry pi device to run a local ubuntu server, because of the
 volume on downloads and time taken to complete the execution; so it's recommended to use an external device.
 
 ## TODO
@@ -41,7 +41,7 @@ multiprocess the download.
 A basic program was added for straightforward usage. This basic program gives you the options to download 
 a single song or playlist just by typing the url on the command promt; It is also posible to make multiple downloads
 given a set of playlists and single videos urls, defined on the "plist.txt" file. The user must
-must specify the number of subprocesses to open ( for this implementation it has been limited to 5 subprocesses).
+specify the number of subprocesses to open ( for this implementation it has been limited to 5 subprocesses).
 1. Navigate to the src folder.
 2. Type the following instruction in the commando prompt:
 ```

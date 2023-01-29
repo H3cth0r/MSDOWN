@@ -8,7 +8,7 @@ if __name__ == "__main__":
     """
     option = 0
     while option != 3:
-        print("SELECTED AN OPTION\n\t1. Download from plist.txt\n\t2. Download single song\n\t3. Exit")
+        print("SELECT AN OPTION\n\t1. Download from plist.txt\n\t2. Download single song\n\t3. Exit")
         option = int(input(">>> "))
         if option == 1:
             dld = Downloader()
