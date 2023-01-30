@@ -13,7 +13,7 @@ if __name__ == "__main__":
         if option == 1:
             dld = Downloader()
             num_process = 0
-            while num_process != 0 and not isinstance(numprocess, int):
+            while num_process == 0:
                 num_process = int(input("type number of subprocesses: "))
             dld.startDownloading()
         elif option == 2:
